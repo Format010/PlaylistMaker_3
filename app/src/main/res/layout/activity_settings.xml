@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <TextView
+        android:id="@+id/SettingText"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:text="Настройки"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/yp_black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="25dp"
+        android:drawableRight="@drawable/share"
+        android:drawableTint="@color/yp_black"
+        android:gravity="center"
+        android:isScrollContainer="false"
+        android:text="Поделиться приложением"
+        android:textAlignment="textStart"
+        android:textColor="@color/yp_black"
+        android:textSize="16sp"
+        app:emojiCompatEnabled="false"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:layout_editor_absoluteX="20dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="25dp"
+        android:drawableRight="@drawable/support"
+        android:drawableTint="@color/yp_black"
+        android:gravity="center"
+        android:text="Написать в поддержку"
+        android:textAlignment="textStart"
+        android:textColor="@color/yp_black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="25dp"
+        android:drawableRight="@drawable/forward"
+        android:drawableTint="@color/yp_black"
+        android:gravity="center"
+        android:text="Пользовательское соглашение"
+        android:textAlignment="textStart"
+        android:textColor="@color/yp_black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+        tools:ignore="RtlCompat" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="80dp"
+        android:text="Темная тема"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        tools:layout_editor_absoluteX="303dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
