@@ -1,99 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/yp_white"
+    android:orientation="vertical">
 
-    <ImageButton
+    <Button
         android:id="@+id/back"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="@color/white"
-        android:foreground="?attr/selectableItemBackground"
-        app:srcCompat="@drawable/back"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-    <TextView
-        android:id="@+id/SettingText"
-        android:layout_width="230dp"
-        android:layout_height="48dp"
-        android:text="Настройки"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textColor="@color/yp_black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/back"
-        android:foreground="?attr/selectableItemBackground"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/textView5"
         android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_marginTop="25dp"
-        android:drawableRight="@drawable/share"
-        android:drawableTint="@color/yp_black"
-        android:gravity="center"
-        android:isScrollContainer="false"
-        android:text="Поделиться приложением"
-        android:textAlignment="textStart"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/yp_white"
+        android:text="@string/settings"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
         android:textColor="@color/yp_black"
-        android:textSize="16sp"
-        app:emojiCompatEnabled="false"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/switch1"
-        tools:layout_editor_absoluteX="20dp"
-        tools:ignore="RtlCompat" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_marginTop="25dp"
-        android:drawableRight="@drawable/support"
-        android:drawableTint="@color/yp_black"
-        android:gravity="center"
-        android:text="Написать в поддержку"
-        android:textAlignment="textStart"
-        android:textColor="@color/yp_black"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="20dp"
-        tools:ignore="RtlCompat" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:layout_marginTop="25dp"
-        android:drawableRight="@drawable/forward"
-        android:drawableTint="@color/yp_black"
-        android:gravity="center"
-        android:text="Пользовательское соглашение"
-        android:textAlignment="textStart"
-        android:textColor="@color/yp_black"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        android:layout_marginRight="30dp"
-        android:layout_marginLeft="20dp"
-        tools:ignore="RtlCompat" />
+        android:textSize="@dimen/text"
+        app:icon="@drawable/back"
+        app:iconPadding="@dimen/set_size20"
+        app:iconTint="@color/yp_black"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="match_parent"
-        android:layout_height="61dp"
+        android:layout_height="@dimen/set_size61"
         android:layout_marginTop="80dp"
-        android:text="Темная тема"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        tools:layout_editor_absoluteX="303dp" />
+        android:textSize="@dimen/set_textSize"
+        android:paddingLeft="@dimen/set_padding16"
+        android:paddingRight="6dp"
+        android:text="@string/darkTheme"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/set_size61"
+        android:backgroundTint="@color/yp_white"
+        android:paddingLeft="@dimen/set_padding16"
+        android:paddingRight="@dimen/set_padding18"
+        android:text="@string/share"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/yp_black"
+        android:textSize="@dimen/set_textSize"
+        app:icon="@drawable/share"
+        app:iconGravity="end"
+        app:iconPadding="@dimen/set_size20"
+        app:iconTint="@color/yp_grey"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/set_size61"
+        android:backgroundTint="@color/yp_white"
+        android:paddingLeft="@dimen/set_padding16"
+        android:paddingRight="@dimen/set_padding18"
+        android:text="@string/mailto"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/yp_black"
+        android:textSize="@dimen/set_textSize"
+        app:icon="@drawable/support"
+        app:iconGravity="end"
+        app:iconPadding="@dimen/set_size20"
+        app:iconTint="@color/yp_grey"
+        app:layout_constraintTop_toBottomOf="@+id/bt2"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/set_size61"
+        android:backgroundTint="@color/yp_white"
+        android:paddingLeft="@dimen/set_padding16"
+        android:paddingRight="@dimen/set_padding18"
+        android:text="@string/useragr"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/yp_black"
+        android:textSize="@dimen/set_textSize"
+        app:icon="@drawable/forward"
+        app:iconGravity="end"
+        app:iconPadding="@dimen/set_size20"
+        app:iconTint="@color/yp_grey"
+        app:layout_constraintTop_toBottomOf="@+id/bt3"
+        style="?android:attr/borderlessButtonStyle"/>
 
 
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
