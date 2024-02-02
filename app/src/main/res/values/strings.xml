@@ -8,6 +8,8 @@
     <string name="share">Поделиться приложением</string>
     <string name="mailto">Написать в поддержку</string>
     <string name="useragr">Пользовательское соглашение</string>
+    <string name="messageShare">Воспользуйся курсом от https://practicum.yandex.ru/learn/android-developer</string>
+
 
 
 </resources>
